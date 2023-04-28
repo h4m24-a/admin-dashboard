@@ -5,22 +5,64 @@
 }
 
 
-.parent {
-display: grid;
-grid-template-columns: repeat(5, 1fr);
-grid-template-rows: repeat(5, 1fr);
-grid-column-gap: 10px;
-grid-row-gap: 10px;
-}
-
-.sidebar { grid-area: 1 / 1 / 6 / 2; }
-.header { grid-area: 1 / 2 / 2 / 6; }
-.dashboard { grid-area: 2 / 2 / 6 / 5; }
-.views { grid-area: 2 / 5 / 4 / 6; }
-.sales { grid-area: 4 / 5 / 6 / 6; }
-
-
-div:not(.parent) {
-    padding: 89.7px;
-    background-color: rgb(243, 243, 91);
-}
+.container {  display: grid;
+    grid-template-columns: 270px 1fr 1fr 1fr 1.3fr;
+    grid-template-rows: 0.9fr 0.7fr 2fr 1.5fr 1fr 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "sidebar header header header header"
+      "sidebar activity activity activity activity"
+      "sidebar sales visitors totalorders revenue"
+      "sidebar revorder revorder revorder products"
+      "sidebar revorder revorder revorder products"
+      "sidebar invoice invoice invoice products";
+  }
+  
+  .header { grid-area: header; }
+  
+  .activity { grid-area: activity; }
+  
+  .sales { grid-area: sales; }
+  
+  .visitors { grid-area: visitors; }
+  
+  .totalorders { grid-area: totalorders; }
+  
+  .revenue { grid-area: revenue; }
+  
+  .sidebar { grid-area: sidebar; }
+  
+  .revorder { grid-area: revorder; }
+  
+  .invoice { grid-area: invoice; }
+  
+  .products { grid-area: products; }
+  
+  
+  
+  html, body , .container {
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* For presentation only, no need to copy the code below */
+  
+  .container * {
+    border: 1px solid red;
+    position: relative;
+  }
+  
+  .container *:after {
+    content:attr(class);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
