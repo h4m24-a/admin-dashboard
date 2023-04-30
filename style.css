@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -10,8 +12,8 @@ body {
 
 
 .container {  display: grid;
-    grid-template-columns: 270px 1fr 1fr 1fr 1.3fr;
-    grid-template-rows: 0.9fr 0.7fr 1.7fr 1fr 1fr 1.3fr;
+    grid-template-columns: 300px 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 15px 15px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -35,9 +37,7 @@ body {
   .totalorders { grid-area: totalorders; }
   
   .revenue { grid-area: revenue; }
-  
-  .sidebar { grid-area: sidebar; }
-  
+    
   .revorder { grid-area: revorder; }
   
   .invoice { grid-area: invoice; }
@@ -48,8 +48,82 @@ body {
 .sidebar {
     background-color: #181a19;
     grid-area: sidebar;
-  }
-  
+    display: block;
+    width: 300px;
+}
+
+.sidebar a{
+    text-decoration: none;
+    display: flex;
+    padding:  20px;
+    color: #7a7979;
+    font-size: 22px;
+    justify-content: center;
+    align-items: center;
+    transition: margin 0.4s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidebar a i{
+    margin-right: 16px;
+}
+
+.sidebar .brand{
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 12px;
+}
+
+.sidebar .content{
+    margin-top: 20px;
+}
+
+ .content :hover{
+    color: #0695FE;
+    margin-left: 8px;
+}
+
+.h_line {
+  border-bottom: 3px solid rgb(80, 80, 78);
+  width: 290px;
+  margin: 5px;
+  text-align: center;
+}
+
+.profiles {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  align-content: flex-end;
+  height: 30%;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+  justify-content: center;
+  align-items: center;
+  height: 15%;
+  width: 20%;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+
+.profiletext{
+  color: #7a7979;;
+  font-family: 'Poppins', sans-serif, Verdana;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+}
+
+
+
 .header {
   grid-area: header;
   background-color: #fff
@@ -96,12 +170,19 @@ body {
   background-color: #fff
 }
 
-html,
+
+
+
+
+
+
+
+ html,
 body,
 .container {
   height: 100%;
   margin: 0;
-}
+} 
 
 
 
