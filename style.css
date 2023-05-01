@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@700&display=swap');
 
 * {
   margin: 0;
@@ -7,81 +8,60 @@
 }
 
 body {
-    background-color: #f5f5f7;
+  background-color: #f5f5f7;
 }
 
-
-.container {  display: grid;
-    grid-template-columns: 310px 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 15px 15px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "sidebar header header header header"
-      "sidebar activity activity activity activity"
-      "sidebar sales visitors totalorders revenue"
-      "sidebar revorder revorder revorder revenue"
-      "sidebar revorder revorder revorder products"
-      "sidebar invoice invoice invoice products";
-  }
-  
-  
-  .header { grid-area: header; }
-  
-  .activity { grid-area: activity; }
-  
-  .sales { grid-area: sales; }
-  
-  .visitors { grid-area: visitors; }
-  
-  .totalorders { grid-area: totalorders; }
-  
-  .revenue { grid-area: revenue; }
-    
-  .revorder { grid-area: revorder; }
-  
-  .invoice { grid-area: invoice; }
-  
-  .products { grid-area: products; }
-  
+.container {
+  display: grid;
+  grid-template-columns: 310px 1fr 1fr 1fr 1.3fr;
+  grid-template-rows: 0.7fr 0.7fr 2fr 1.5fr 1fr 1fr;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "sidebar header header header header"
+    "sidebar activity activity activity activity"
+    "sidebar sales visitors totalorders revenue"
+    "sidebar revorder revorder revorder revenue"
+    "sidebar revorder revorder revorder products"
+    "sidebar invoice invoice invoice products";
+}
 
 .sidebar {
-    background-color: #181a19;
-    grid-area: sidebar;
-    display: block;
-    width: 310px;
+  background-color: #181a19;
+  grid-area: sidebar;
+  display: block;
+  width: 310px;
 }
 
-.sidebar a{
-    text-decoration: none;
-    display: flex;
-    padding:  18px;
-    color: #7a7979;
-    font-size: 22px;
-    justify-content: center;
-    align-items: center;
-    transition: margin 0.4s;
-    font-family: 'Poppins', sans-serif;
+.sidebar a {
+  text-decoration: none;
+  display: flex;
+  padding: 18px;
+  color: #7a7979;
+  font-size: 22px;
+  justify-content: center;
+  align-items: center;
+  transition: margin 0.4s;
+  font-family: "Poppins", sans-serif;
 }
 
-.sidebar a i{
-    margin-right: 16px;
+.sidebar a i {
+  margin-right: 16px;
 }
 
-.sidebar .brand{
-    font-size: 24px;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin-top: 12px;
+.sidebar .brand {
+  font-size: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 12px;
 }
 
-.sidebar .content{
-    margin-top: 20px;
+.sidebar .content {
+  margin-top: 20px;
 }
 
- .content :hover{
-    background-color: #282828;
-    color: #fff;
+.content :hover {
+  background-color: #282828;
+  color: #fff;
 }
 
 .h_line {
@@ -93,10 +73,10 @@ body {
 
 .profiles {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   flex-wrap: wrap;
   align-content: flex-end;
-  height: 34%;
+  height: 42%;
 }
 
 .profile {
@@ -111,10 +91,9 @@ body {
   cursor: pointer;
 }
 
-
-.profiletext{
-  color: #7a7979;;
-  font-family: 'Poppins', sans-serif;
+.profiletext {
+  color: #7a7979;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   display: flex;
   justify-content: center;
@@ -122,52 +101,123 @@ body {
   margin-left: 12px;
 }
 
-
-
 .header {
   grid-area: header;
-  background-color: #fff
+  background-color: #fff;
 }
+
+.header .headernav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin-left: 2rem;
+  margin-right: 4rem;
+}
+
+.headernav ul {
+  display: flex;
+}
+
+
+.headernav p {
+  color: black;
+  font-size: 32px;
+  font-family: 'Public Sans', sans-serif;
+
+}
+
+input.search {
+  width: 260px;
+  border: 1px solid black;
+  padding: 9px 4px;
+  font-family: 'Public Sans', sans-serif;
+  color: black;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.headericons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 68%;
+}
+
+
+.button-23 {
+  background-color: #FFFFFF;
+  border: 1px solid #2166e7;
+  border-radius: 12px;
+  box-sizing: border-box;
+  color: #2166e7;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+}
+
+.button-23:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.button-23:active {
+  background-color: #F7F7F7;
+  border-color: #3675e9;
+  transform: scale(.96);
+}
+
+.button-23:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
 
 .activity {
   grid-area: activity;
-  background-color: #fff
 }
 
 .sales {
   grid-area: sales;
-  background-color: #fff
 }
 
 .visitors {
   grid-area: visitors;
-  background-color: #fff
 }
 
 .totalorders {
   grid-area: totalorders;
-  background-color: #fff
 }
 
 .revenue {
   grid-area: revenue;
-  background-color: #fff
 }
-
 
 .revorder {
   grid-area: revorder;
-  background-color: #fff
 }
 
 .invoice {
   grid-area: invoice;
-  background-color: #fff
 }
 
 .products {
   grid-area: products;
-  background-color: #fff
 }
 
 
@@ -177,19 +227,13 @@ body {
 
 
 
- html,
+
+html,
 body,
 .container {
   height: 100%;
   margin: 0;
-} 
-
-
-
-
-
-
-
+}
 
 /* For presentation only, no need to copy the code below 
 
