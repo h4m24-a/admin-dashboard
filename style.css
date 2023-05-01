@@ -248,12 +248,12 @@ input.search {
 
 
 .sales h2 {
-  font-size: 35px;
+  font-size: 40px;
   font-family: 'Public Sans', sans-serif;
 }
 
 .sales h3 {
-  font-size: 25px;
+  font-size: 28px;
   margin-top: 12px;
   font-family: 'Public Sans', sans-serif;
   color: #12c468;
@@ -273,12 +273,12 @@ input.search {
 
 
 .visitors h2 {
-  font-size: 35px;
+  font-size: 40px;
   font-family: 'Public Sans', sans-serif;
 }
 
 .visitors h3 {
-  font-size: 25px;
+  font-size: 28px;
   margin-top: 12px;
   font-family: 'Public Sans', sans-serif;
   color: #12c468;
@@ -296,7 +296,39 @@ input.search {
 .totalorders {
   grid-area: totalorders;
   background-color: #fff;
+  border-radius: 10px;
+  padding: 3rem;
 }
+
+.orders {
+  display: grid;
+  grid-template-columns: 1.5fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.orders h1 {
+  font-size: 29px;
+  font-family: 'Public Sans', sans-serif;
+}
+
+.totalorders h2 {
+  font-size: 40px;
+  font-family: 'Public Sans', sans-serif;
+}
+
+.totalorders h3 {
+  font-size: 28px;
+  margin-top: 12px;
+  font-family: 'Public Sans', sans-serif;
+  color: #12c468;
+}
+
+
+
+
+
 
 .revenue {
   grid-area: revenue;
