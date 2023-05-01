@@ -15,6 +15,7 @@ body {
   display: grid;
   grid-template-columns: 310px 1fr 1fr 1fr 1.3fr;
   grid-template-rows: 0.7fr 0.7fr 2fr 1.5fr 1fr 1fr;
+  gap: 12px 12px;
   grid-auto-flow: row;
   grid-template-areas:
     "sidebar header header header header"
@@ -225,18 +226,22 @@ input.search {
 
 .sales {
   grid-area: sales;
+  background-color: #fff;
 }
 
 .visitors {
   grid-area: visitors;
+  background-color: #fff;
 }
 
 .totalorders {
   grid-area: totalorders;
+  background-color: #fff;
 }
 
 .revenue {
   grid-area: revenue;
+  background-color: #fff;
 }
 
 .revorder {
