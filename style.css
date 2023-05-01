@@ -14,7 +14,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 310px 1fr 1fr 1fr 1.3fr;
-  grid-template-rows: 0.7fr 0.7fr 2fr 1.5fr 1fr 1fr;
+  grid-template-rows: 0.7fr 0.7fr 1fr 1.5fr 1fr 1fr;
   gap: 12px 12px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -227,6 +227,36 @@ input.search {
 .sales {
   grid-area: sales;
   background-color: #fff;
+  border-radius: 10px;
+  padding: 4rem;
+}
+
+
+.bag {
+  display: grid;
+  grid-template-columns: 1.5fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+
+.bag h1 {
+  font-size: 28px;
+  font-family: 'Public Sans', sans-serif;
+}
+
+
+.sales h2 {
+  font-size: 25px;
+  font-family: 'Public Sans', sans-serif;
+}
+
+.sales h3 {
+  font-size: 24px;
+  margin-top: 12px;
+  font-family: 'Public Sans', sans-serif;
+  color: #12c468;
 }
 
 .visitors {
@@ -246,14 +276,17 @@ input.search {
 
 .revorder {
   grid-area: revorder;
+  background-color: #fff;
 }
 
 .invoice {
   grid-area: invoice;
+  background-color: #fff;
 }
 
 .products {
   grid-area: products;
+  background-color: #fff;
 }
 
 
