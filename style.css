@@ -98,7 +98,7 @@ body {
 }
 
 
-.headernav p {
+.headernav h1 {
   color: black;
   font-size: 32px;
   font-family: 'Rubik', sans-serif;
@@ -329,12 +329,55 @@ input.search {
   padding: 1rem;
 }
 
+.chart {
+  display: table;
+  table-layout: fixed;
+  width: 80%;
+  max-width: 900px;
+  height: 200px;
+  margin: 0 auto;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 2%, rgba(0, 0, 0, 0) 2%);
+  background-size: 100% 50px;
+  background-position: left top;
+  font-family: 'Rubik', sans-serif;
+}
+.chart li {
+  position: relative;
+  display: table-cell;
+  vertical-align: bottom;
+  height: 200px;
+}
+.chart span {
+  margin: 0 1em;
+  display: block;
+  background: #33FF61;
+  animation: draw 1s ease-in-out;
+}
+.chart span:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  padding: 5px 1em 0;
+  display: block;
+  text-align: center;
+  content: attr(title);
+  word-wrap: break-word;
+}
+
+
+@keyframes draw {
+  0% {
+    height: 0;
+  }
+}
+
 
 
 
 .invoice {
   grid-area: invoice;
-  background-color: #fff;
+  background-color: #f9fbff;
   border-radius: 10px;
 }
 
