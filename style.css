@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
 
 * {
   margin: 0;
@@ -15,7 +16,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 310px 1fr 1fr 1fr 1.2fr;
-  grid-template-rows: 0.4fr 0.3fr 1.2fr 0.5fr 1fr 1fr;
+  grid-template-rows: 0.4fr 0.3fr 1.2fr 0.1fr 1fr 1fr;
   gap: 12px 12px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -23,8 +24,8 @@ body {
     "sidebar activity activity activity activity"
     "sidebar sales visitors totalorders revenue"
     "sidebar revorder revorder revorder revenue"
-    "sidebar revorder revorder revorder products"
-    "sidebar invoice invoice invoice products";
+    "sidebar revorder revorder revorder trending"
+    "sidebar invoice invoice invoice trending";
 }
 
 .sidebar {
@@ -47,12 +48,13 @@ body {
 }
 
 .sidebar a i {
-  margin-right: 16px;
+  padding-right: 16px;
 }
 
 .sidebar .brand {
   font-size: 24px;
   font-weight: 800;
+  font-family: 'Rubik', sans-serif;
   text-transform: uppercase;
   margin-top: 12px;
   color: #bebaba;
@@ -99,7 +101,7 @@ body {
 .headernav p {
   color: black;
   font-size: 32px;
-  font-family: 'Public Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
 
 }
 
@@ -168,7 +170,7 @@ input.search {
 .activity h1 {
   color: black;
   font-size: 32px;
-  font-family: 'Public Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
   margin-left: 2rem;
 }
 
@@ -183,7 +185,7 @@ input.search {
 
 
 .activitycontainer p {
-  font-family: 'Public Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 
@@ -206,7 +208,7 @@ input.search {
 
 .sales h1 {
   font-size: 29px;
-  font-family: 'Public Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 
@@ -239,7 +241,7 @@ input.search {
 
 .visitors h1 {
   font-size: 29px;
-  font-family: 'Public Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 
@@ -274,7 +276,7 @@ input.search {
 
 .totalorders h1 {
   font-size: 29px;
-  font-family: 'Public Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 
@@ -309,7 +311,7 @@ input.search {
 
 .revlayout h1 {
   font-size: 28px;
-  font-family: 'Public Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
   margin-right: 2rem;
 }
 
@@ -318,18 +320,95 @@ input.search {
 .revorder {
   grid-area: revorder;
   background-color: #fff;
+  border-radius: 10px;
 }
+
+.revorder h1 {
+  font-size: 30px;
+  font-family: 'Rubik', sans-serif;
+  padding: 1rem;
+}
+
+
+
 
 .invoice {
   grid-area: invoice;
   background-color: #fff;
+  border-radius: 10px;
 }
 
-.products {
-  grid-area: products;
+.invoicetext h1 {
+  font-size: 30px;
+  font-family: 'Rubik', sans-serif;
+  padding: 1rem;
+}
+
+
+.table {
+  font-family: 'Mukta', sans-serif;
+  color: #4f546c;
+  background-color: #f9fbff;
+}
+
+table {
+  width: 100%;
+}
+
+.table thead {
+  box-shadow: 0 5px 10px #e1e5ee;
+}
+.table th {
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+.table td {
+  padding: 1rem 2rem;
+}
+.table a {
+  text-decoration: none;
+  color: #2962ff;
+}
+.table .status {
+  border-radius: 0.2rem;
+  background-color: red;
+  padding: 0.2rem 1rem;
+  text-align: center;
+}
+.table .status-pending {
+  background-color: #fff0c2;
+  color: #a68b00;
+}
+.table .status-paid {
+  background-color: #c8e6c9;
+  color: #388e3c;
+}
+.table .status-unpaid {
+  background-color: #ffcdd2;
+  color: #c62828;
+}
+.table .amount {
+  text-align: right;
+}
+.table tr:nth-child(even) {
+  background-color: #f4f6fb;
+}
+
+
+.trending {
+  grid-area: trending;
   background-color: #fff;
 }
 
+
+.trending h1 {
+  font-size: 30px;
+  font-family: 'Rubik', sans-serif;
+  padding: 1rem;
+}
 
 /* Chart */
 
