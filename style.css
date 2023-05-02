@@ -55,6 +55,7 @@ body {
   font-weight: 800;
   text-transform: uppercase;
   margin-top: 12px;
+  color: #bebaba;
 }
 
 .sidebar .content {
@@ -333,8 +334,9 @@ input.search {
 /* Chart */
 
 .chart-container {
-  display: block;
-  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -351,26 +353,6 @@ input.search {
   
 }
 
-
-
-.programming-stats .details ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  
-}
-
-.programming-stats .details ul li {
-  font-size: 20px;
-  margin: 22px 0;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.programming-stats .details .percentage {
-  font-weight: 700;
-  color: #e94855;
-}
 
 
 
