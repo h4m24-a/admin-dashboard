@@ -588,13 +588,185 @@ align-items: center;
 
 
 
+/* Mobile View */
+@media (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 159%;
+  }
+
+  .sales,
+  .activity,
+  .visitors,
+  .totalorders {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .revorder {
+    margin-bottom: 3rem;
+  }
 
 
+  .activity h1 {
+    font-size: 28px;
+  }
 
+  .activitycontainer p {
+    font-size: 16px;
+  }
 
-/* html,
-body,
-.container {
-  height: 100%;
-  margin: 0;
-} */
+  .sales h1 {
+    font-size: 24px;
+  }
+
+  .sales h2 {
+    font-size: 36px;
+  }
+
+  .sales h3 {
+    font-size: 28px;
+  }
+
+  .visitors h1 {
+    font-size: 24px;
+  }
+
+  .visitors h2 {
+    font-size: 36px;
+  }
+
+  .visitors h3 {
+    font-size: 28px;
+  }
+
+  .totalorders h1 {
+    font-size: 24px;
+  }
+
+  .totalorders h2 {
+    font-size: 36px;
+  }
+
+  .totalorders h3 {
+    font-size: 28px;
+  }
+
+  .revenue {
+    padding-top: 2rem;
+  }
+
+  .revenue h1 {
+    font-size: 24px;
+  }
+
+  .revlayout h1 {
+    font-size: 24px;
+  }
+
+  .revorder h1 {
+    font-size: 28px;
+  }
+
+  .chart {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .trending h1 {
+    font-size: 24px;
+  }
+
+  .calendar {
+    font-size: 14px;
+  }
+
+  .cl_plan {
+    font-size: 18px;
+  }
+
+  .cl_copy {
+    font-size: 18px;
+  }
+
+  .ce_title {
+    font-size: 12px;
+  }
+
+  .event_item {
+    font-size: 14px;
+  }
+
+  .headernav h1 {
+    font-size: 24px;
+  }
+  
+  input.search {
+    width: 180px;
+    border: 1px solid black;
+    padding: 9px 4px;
+    font-family: 'Public Sans', sans-serif;
+    color: black;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-left: 1rem;
+  }
+  
+  .headericons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    
+  }
+  
+  
+  .button-23 {
+    background-color: #FFFFFF;
+    border: 1px solid #2166e7;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #2166e7;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    padding: 8px 20px;
+    margin: 1rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+    user-select: none;
+    -webkit-user-select: none;
+    width: auto;
+  }
+  
+  
+  .button-23:active {
+    background-color: #F7F7F7;
+    border-color: black;
+    transform: scale(.96);
+  }
+
+  .activitycontainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+}
